@@ -134,7 +134,7 @@ How many variables are in this dataset? What type of variable is each? Display e
 
 Run `glimpse(Whickham)` in your Console to see the variables.
 
-**Number of variables:** _____
+**Number of variables:** 3
 
 **Variable types:**
 
@@ -149,37 +149,37 @@ Run `glimpse(Whickham)` in your Console to see the variables.
 Create appropriate visualizations for each variable.
 
 **For categorical variables (outcome and smoker):**
-```{r visualize-categorical, eval = FALSE}
+```{r visualize-categorical, eval = TRUE}
 # Remember to change eval=FALSE to eval=TRUE!
 
 # Outcome variable
-ggplot(data = Whickham, aes(x = ___)) +
+ggplot(data = Whickham, aes(x = outcome)) +
   geom_bar() +
   labs(
-    title = "___",
-    x = "___",
-    y = "___"
+    title = "Distribution of Outcome",
+    x = "Outcome",
+    y = "Count"
   )
 
 # Smoker variable
-ggplot(data = Whickham, aes(x = ___)) +
+ggplot(data = Whickham, aes(x = smoker)) +
   geom_bar() +
   labs(
-    title = "___",
-    x = "___",
-    y = "___"
+    title = "Distribution of Smoker Status",
+    x = "Smoker",
+    y = "Count"
   )
 ```
 
 **For numerical variable (age):**
-```{r visualize-age, eval = FALSE}
+```{r visualize-age, eval = TRUE}
 # Remember to change eval=FALSE to eval=TRUE!
-ggplot(data = Whickham, aes(x = ___)) +
-  geom_histogram(binwidth = ___) +
+ggplot(data = Whickham, aes(x = age)) +
+  geom_histogram(binwidth = 5) +
   labs(
-    title = "___",
-    x = "___",
-    y = "___"
+    title = "Distribution of Age",
+    x = "Age",
+    y = "Count"
   )
 ```
 
@@ -197,7 +197,7 @@ What would you expect the relationship between smoking status and health outcome
 
 **Your prediction:**
 
-I would expect that smokers would have 
+I would expect that smokers would have declining health, as well as a surge in younger death rates.
 
 🧶 ✅ ⬆️ **Knit, commit with message "Completed Exercises 3-4", and push your changes.**
 
